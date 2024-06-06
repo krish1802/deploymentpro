@@ -248,7 +248,7 @@ def remove_file(filename):
         print(f"File '{filename}' does not exist.")
 
 def convert_video_supported(videofile):
-    output_file = r'static/outputs/convertedOutput.mp4'
+    output_file = f'static/outputs/{videofile}'
     file_exists = os.path.exists(output_file)
     counting = 1
 

@@ -123,7 +123,7 @@ class TestingMain:
         lineColor = (0,255,0)
 
         # Define the codec and create VideoWriter object
-        output_file = 'outputs/output_video.mp4'
+        output_file = f'outputs/{filename_input}'
         file_exists = os.path.exists(output_file)
         counting = 1
 
