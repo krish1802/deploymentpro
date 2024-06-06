@@ -190,7 +190,7 @@ def upload_file():
 
     if file:
         global filename
-        filename = "formDetection.mp4"
+        filename = file.filename
         count = 1
         while os.path.exists(os.path.join(app.config['UPLOAD_FOLDER'], filename)):
             # If the filename already exists, append a number to make it unique
